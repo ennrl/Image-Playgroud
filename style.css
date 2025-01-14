@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: black;
+    background-size: cover;
+    color: white;
+    font-family: "Open Sans";
+}
+.header .logo {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    color: greenyellow;
+    font-family: "Dela Gothic One", sans-serif;
+    letter-spacing: 0.6px;
+}
+.header .pre {
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+.text {
+    padding: 20px;
+    font-size: 14px;
+    padding-bottom: 0px;
+}
+#canva {
+    width: calc(100% - 40px);
+    background-color: rgb(28, 28, 30);
+    margin-left: 20px;
+    border-radius: 15px;
+    outline: 1px solid greenyellow
+}
+textarea {
+    width: 100%;
+    padding: 10px;
+    outline: 1px solid greenyellow;
+    border-radius: 15px;
+    border: 0;
+    background: rgb(28, 28, 30);
+    color: white;
+    min-height: 120px;
+    font-family: "Open Sans";
+}
+.buttonBox .btn {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: black;
+    background-color: greenyellow;
+    
+}
+.buttonBox {
+    display: flex;
+    margin-top: 10px;
+    flex-direction: row;
+    justify-content: center;
+}
+@media screen and (min-width: 1000px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .content {
+        position: absolute;
+        width: 400px;
+        padding: 20px;
+        padding-top: 0px;
+        outline: 1px solid greenyellow;
+        border-radius: 20px;
+        left: calc(50vw - 200px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
